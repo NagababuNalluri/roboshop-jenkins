@@ -8,3 +8,5 @@ pipeline_jobs:
   - { name: "dispatch", dir: "CIpipelines" }
 
 
+folders:
+  - CIpipelines

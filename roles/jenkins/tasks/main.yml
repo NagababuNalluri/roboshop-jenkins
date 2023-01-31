@@ -5,8 +5,8 @@
     url: http://3.237.170.121:8080
     user: admin
     password: admin123
-    loop: "{{folders}}"
+    loop: "{{ folders }}"
 
 - name: Create jobs in jenkins
   ansible.builtin.include_tasks: pipeline.yml
-  loop: "{{pipeline_jobs}}"
+  loop: "{{ pipeline_jobs }}"

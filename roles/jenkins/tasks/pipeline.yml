@@ -1,11 +1,12 @@
 - name: Create config file
   ansible.builtin.template:
     src: nag-jobs.xml
-    dest: /tmp/na-jobs.xml
+    dest: /tmp/nag-jobs.xml
 
 - name: Creating jobs in jenkins
   community.general.jenkins_job:
-    config: "{{item.dir}} / {{item.name}}"
+    config: "{{ lookup('file', '/tmp/nag-jobs.xml') }}"
+    name: "{{item.dir}} / {{item.name}}"
     url: http://3.237.170.121:8080
     user: admin
     password: admin123

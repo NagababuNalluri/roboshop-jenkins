@@ -9,4 +9,4 @@
     name: "{{item.dir}} / {{item.name}}"
     url: http://3.237.170.121:8080
     user: admin
-    password: admin123
+    password: "{{ jenkins_password }}"

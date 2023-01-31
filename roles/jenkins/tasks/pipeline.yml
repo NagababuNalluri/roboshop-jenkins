@@ -6,6 +6,6 @@
 - name: Creating jobs in jenkins
   community.general.jenkins_job:
     config: "{{item.dir}} / {{item.name}}"
-    url: http://3.237.170.121:8080/
+    url: http://3.237.170.121:8080
     user: admin
     password: admin123

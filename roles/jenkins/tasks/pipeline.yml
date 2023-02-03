@@ -7,6 +7,6 @@
   community.general.jenkins_job:
     config: "{{ lookup('file', '/tmp/nag-jobs.xml') }}"
     name: "{{item.dir}}/{{item.name}}"
-    url: jenkins.devopshemasri.online:8080
+    url: http//44.203.30.254:8080
     user: admin
     password: "{{ jenkins_password }}"

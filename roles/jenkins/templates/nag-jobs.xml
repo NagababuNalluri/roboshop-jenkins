@@ -12,7 +12,7 @@
     <description></description>
     <keepDependencies>false</keepDependencies>
     <properties/>
-    <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@3606.v0b_d8b_e512dcf">
+    <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@3611.v201b_d9f9eb_f7">
         <scm class="hudson.plugins.git.GitSCM" plugin="git@5.0.0">
             <configVersion>2</configVersion>
             <userRemoteConfigs>
@@ -35,3 +35,4 @@
     <triggers/>
     <disabled>false</disabled>
 </flow-definition>
+

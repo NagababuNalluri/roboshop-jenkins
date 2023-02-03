@@ -7,7 +7,7 @@ echo '{
           "ResourceRecordSet": {
             "Name": "jenkins.devopshemasri.online",
             "Type": "A",
-            "TTL": 30,
+            "TTL": 15,
             "ResourceRecords": [{ "Value": "IPADDRESS"}]
           }}]
       }' | sed -e "s/IPADDRESS/${IP}/"

@@ -15,3 +15,5 @@ echo '{
 
 ZONE_ID="Z0684247D5O5IEDBEU86"
 aws route53 change-resource-record-sets --hosted-zone-id ${ZONE_ID} --change-batch file:///tmp/jenkins.json |jq .
+
+echo -e "\e{31m,Updated DNS record with latet public address,\e[31m"
